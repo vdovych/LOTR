@@ -17,8 +17,8 @@ public class GameTest {
             Character knight = new Knight();
             assertTrue(king.getHp()<=15&&king.getHp()>=5);
             assertTrue(king.getPower()<=15&&king.getPower()>=5);
-            assertTrue(knight.getHp()<=15&&knight.getHp()>=5);
-            assertTrue(knight.getPower()<=15&&knight.getPower()>=5);
+            assertTrue(knight.getHp()<=12&&knight.getHp()>=2);
+            assertTrue(knight.getPower()<=12&&knight.getPower()>=2);
         }
     }
     @Test
