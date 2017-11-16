@@ -9,7 +9,7 @@ public class Elf extends Character {
             c.power--;
         }
     }
-    Elf(){
+    public Elf(){
         this.power = 10;
         this.hp = 10;
     }

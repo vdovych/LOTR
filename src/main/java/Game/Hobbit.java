@@ -7,7 +7,7 @@ public class Hobbit extends Character {
     private void toCry(){
             System.out.println("Que que que");
             }
-    Hobbit(){
+    public Hobbit(){
         this.power = 0;
         this.hp = 3;
     }

@@ -2,10 +2,15 @@ package Game;
 
 
 public class GameManager {
-    static void fight(Character c1, Character c2){
+    public static void fight(Character c1, Character c2){
         Character tmp;
         System.out.println(String.format("%d\n%d\n%s",c1.power,c1.hp,c1.getClass()));
         System.out.println(String.format("%d\n%d\n%s",c2.power,c2.hp,c2.getClass()));
+        if(c1.getClass()==c2.getClass()&&c2.getClass()==Hobbit.class){
+            System.out.println("Two hobbits decided not to fight");
+            return;
+        }
+
         if(!c1.isAlive()){
             System.out.println("First warrior came dead to the fight!\n");
             return;
